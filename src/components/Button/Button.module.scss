@@ -1,0 +1,22 @@
+@import "../../styles/colors.module";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  min-width: 30px;
+  height: 30px;
+
+  outline: none;
+  border: 3px solid $button-icon;
+  border-radius: 6px;
+
+  background-color: transparent;
+  transition: background-color .3s ease;
+
+  &:focus    {
+    background-color: $button-focus;
+  }
+}

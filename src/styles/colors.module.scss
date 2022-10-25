@@ -1,0 +1,28 @@
+$toggle-background: #9C9B9E;
+$toggle-active: #FFFFFF;
+$toggle-disabled: #515151;
+$toggle-shadow: rgba(0, 0, 0, 0.5);
+$toggle-inner-shadow: rgba(0, 0, 0, 0.1);
+
+$button-icon: rgba(0, 0, 0, 0.65);
+$button-focus:  rgba(0, 0, 0, 0.15);
+
+$input-underline: rgba(0, 0, 0, 0.5);
+$input-focus-background: rgba(0, 0, 0, 0.1);
+
+$drop-down-list-shadow: rgba(0, 0, 0, 0.15);
+$drop-down-list-item-hover: rgba(0, 0, 0, 0.5);
+$drop-down-list-item-active: rgba(0, 0, 0, 0.7);
+
+$scrollbar-track: rgba(0, 0, 0, 0.1);
+$scrollbar-thumb: rgba(0, 0, 0, 0.3);
+$scrollbar-thumb-hover: rgba(0, 0, 0, 0.5);
+
+$row-hover: #CACACA;
+$row-marker: #515151;
+$row-selected: rgba(81, 81, 81, 0.7);
+
+
+:export {
+  toggleBackground: $toggle-background;
+}

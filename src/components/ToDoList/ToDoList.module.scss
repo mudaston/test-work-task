@@ -1,0 +1,100 @@
+.todolist {
+  max-width: 600px;
+
+  margin: 100px auto 0 auto;
+
+  // .todolist__filters
+  &__filters {
+    display: grid;
+    grid-template-columns: .5fr 2.5fr 2fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". heading-status   heading-item   heading-ID   heading-name   button-add"
+      ". dropdown-status  dropdown-item  dropdown-ID  dropdown-name  button-delete";
+    gap: 10px;
+
+  }
+
+  // .todolist__heading
+  &__heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    &-status {
+      grid-area: heading-status;
+    }
+
+    &-item {
+      grid-area: heading-item;
+    }
+
+    &-ID {
+      grid-area: heading-ID;
+    }
+
+    &-name {
+      grid-area: heading-name;
+    }
+
+    // .todolist__heading_center
+    &_center {
+      justify-content: center;
+    }
+  }
+
+  // .todolist__dropdown
+  &__dropdown {
+    // .todolist__dropdown-status
+    &-status {
+      grid-area: dropdown-status;
+    }
+
+    // .todolist__dropdown-item
+    &-item {
+      grid-area: dropdown-item;
+    }
+
+    // .todolist__dropdown-ID
+    &-ID {
+      grid-area: dropdown-ID;
+    }
+
+    // .todolist__dropdown-name
+    &-name {
+      grid-area: dropdown-name;
+    }
+  }
+
+  // .todolist__button
+  &__button {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  // .todolist__button-add
+  &__button-add {
+    margin-left: auto;
+    grid-area: button-add;
+  }
+
+  // .todolist__button-delete
+  &__button-delete {
+    margin-left: auto;
+    grid-area: button-delete;
+  }
+}
+
+.todolist-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 0;
+  margin: 30px 0 0;
+
+  list-style-type: none;
+}
